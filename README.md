@@ -1,14 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Playburber Website is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Developing
 
-First, run the development server:
+First, you need to install the dependencies:
 
 ```bash
-npm run dev
-# or
+yarn install
+```
+
+Now, you can run the development server:
+
+```bash
 yarn dev
 ```
+
+NOTE: You can use npm instead of yarn if you want, but like...
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -17,6 +23,14 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Code Style and File Naming
+
+Generally an index file is just exporting the contents of other files, so a folder name should hold somewhat of a namespace for the thing you're building.
+
+React components go with TitleCase. The name of the folder matches the default export. The index file exports the default export of the file with the same name. Its style file should also match the name, like MyComponent.module.css -- this is also located in that component folder so that we don't need a bunch of global css files.
+
+Utility functions go with camelCase. No need to do default exports for these.
 
 ## Learn More
 
