@@ -24,7 +24,7 @@
     "*": "echo 'formatting';",
     "*.{js,jsx}": [
       "npm run format",
-      "npm run lint"
+      "eslint"
     ]
   }
 }
