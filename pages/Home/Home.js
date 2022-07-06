@@ -7,6 +7,8 @@ import styles from './Home.module.css';
  * @returns the Home page ya dingus!
  */
 export default function Home() {
+  const pageTitle = 'Playburber 🍔';
+
   return (
     <div className={styles.container}>
       <Head>
@@ -16,7 +18,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Playburber 🍔</h1>
+        <h1 className={styles.title}>{pageTitle}</h1>
 
         <p className={styles.description}>friends play the game</p>
 
