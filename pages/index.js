@@ -1,17 +1,10 @@
 import Home from './Home';
 
 /**
- * The PageContainer is the wrapper for pages.
- * Routing can exist in here and it can decide which page to render based on URL.
- * It can also inject anything that might need to be injected to specific pages.
- * Maybe this can even be changed and just render Router which then does the routing.
- * It's probably better to not do stuff in an index file anyway.
- * @returns the container for every page
+ * This index file just renders the Home page.
+ * Routing is actually just handled based on the exact match within /pages directory
  */
-const PageContainer = () => (
-  <div>
-    <Home />
-  </div>
-);
-
-export default PageContainer;
+const Index = () => {
+  return <Home />;
+};
+export default Index;
