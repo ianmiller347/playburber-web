@@ -14,6 +14,12 @@ const pagesData = {
     pageName: 'Home',
     pageDescription: 'Playburber a hamburber part 1.19 basically lol',
   },
+  projects: {
+    pageId: 'projects', // this is redundant, could just use url path.
+    pageName: 'Projects',
+    pageDescription:
+      'Playburber projects are very neat; wouldnt you like to check the progress?',
+  },
 };
 
 export default function handler(req, res) {

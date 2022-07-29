@@ -33,12 +33,12 @@ export default function Home() {
             </a>
           </Link>
 
-          <Link href="/builds" passHref>
+          <Link href="/projects" passHref>
             <a className={styles.card}>
               <h2>Projects and Builds &rarr;</h2>
               <p>
-                Find out about cool builds happening from this great group of
-                friends
+                Find out about cool projects and builds happening from this
+                great group of friends on the server
               </p>
             </a>
           </Link>
